@@ -2,12 +2,22 @@
 Nathaly Ambrosio
 11/06/2023
  */
-class Vovoh:
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
+public class Vovoh {
+    private String nome;
+    private int idade;
 
-    def saudacao(self):
-        """Realiza a saudação da Vovoh"""
-        print(f"Olá, sou a Vovoh {self.nome} e tenho {self.idade} anos!")
+    public Vovoh(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public void saudacao() {
+        System.out.println("Oi boy, sou a Vovoh " + this.nome + " e tenho " + this.idade + " anos!");
+    }
+
+    public static void main(String[] args) {
+        Vovoh vovoh = new Vovoh("Nathaly Ambrosio", 99);
+        vovoh.saudacao();
+    }
+}
 
